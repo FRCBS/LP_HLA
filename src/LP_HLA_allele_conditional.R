@@ -1055,8 +1055,8 @@ sapply(seq(1, unique(res.alleles$ID) %>% length, by=2), function(i) {
     annotate(geom='rect', ymin=i-0.5, ymax=i+0.5, xmin= 0, xmax=Inf, 
              fill='grey25', alpha=0.05, color=NA) 
 }) 
-x11(); p.res.alleles 
 
+# Figure 3
 jpeg('results/LP_DQ/Fig3_Alleles_adj.jpg', width=10, height=11, units='in', res=1000)
 p.res.alleles
 dev.off()
