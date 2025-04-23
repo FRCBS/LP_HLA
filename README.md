@@ -4,7 +4,7 @@
 
 J Ritari, MP Reeve, FinnGen, M Siponen, M Vehviläinen, T Salo, K Osoegawa, M Fernandez Viña, B Goudey, J Partanen, E Mignot. Fine mapping of HLA effects in Oral and non-Oral lichen planus. _Submitted manuscript._
 
-Analysis scripts in `src/`
+Analysis scripts in `src/`:
 
 `LP_HLA_allele_combinations.R`
 Analysis of known combinations of HLA-DQA1 and HLA-DQB1 alleles as they occur in FinnGen.
