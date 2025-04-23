@@ -184,15 +184,7 @@ p.hla.snp.manh <- ls.dat %>% filter(LOG10P > 2) %>% ggplot(aes(Position, LOG10P,
 
 p.hla.snp.manh <- p.hla.snp.manh + geom_text(data = panel.anno, aes(label = label), color = 'black', hjust = 0) 
 
-
-# what is left after class1 and 2 adj.
-# rs147628511
-ls.dat %>% filter(Adjusted == (ls.dat$Adjusted %>% levels() %>% .[6])) %>% arrange(1/LOG10P) %>% head
-
-# plot
+# Figure 4
 jpeg('results/LP_DQ/Fig4_SNP_manhattan.jpg', width=11, height=10, units='in', res=1000)
 p.hla.snp.manh %>% tag_facet(open = '', size = 4.3)
 dev.off()
-
-#
-
