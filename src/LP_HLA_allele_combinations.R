@@ -425,14 +425,6 @@ p.res.dqa1.dqb1.diplos.2 <- ggpubr::ggarrange(
                     nrow = 2, labels = c('a)', 'b)'), font.label = list(size = 14), heights = c(45, 36)),
   p.legend, nrow = 2, heights = c(1, 0.05))
 
-# p.res.dqa1.dqb1.diplos.2 <- ggpubr::ggarrange(
-#   ggpubr::ggarrange(p.res.dqa1.dqb1.diplos.dqb1.0501 + p.res.dqa1.dqb1.diplos.dqb1.0501.n + 
-#                       plot_layout(widths=c(2.8, 1)),
-#                     (p.res.dqa1.dqb1.diplos.dqb1.0602 + p.res.dqa1.dqb1.diplos.dqb1.0602.n + 
-#                        plot_layout(widths=c(2.8, 1))) / plot_spacer() + plot_layout(heights = c(1, 0.09)),
-#                     ncol = 2, labels = c('a)', 'b)'), font.label = list(size = 14)),
-#   p.legend, nrow = 2, heights = c(1, 0.05))
-
 
 ## Figure 2
 
