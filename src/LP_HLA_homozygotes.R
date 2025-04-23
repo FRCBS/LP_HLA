@@ -79,15 +79,6 @@ fwrite(tmp, 'data/phenotypes/DQhomozygotes_samples_noeff.list', sep='\t')
 
 
 ## -----------------------------------------------
-## DQA1*01:01', 'DQB1*05:01 hom
-## -----------------------------------------------
-
-# makeHLAhom(c('DQA1*01:01', 'DQB1*05:01'), 'DQA1.0101_DQB1.0501_')
-
-
-
-
-## -----------------------------------------------
 ## regenie step 2: association
 ## v3.0.1
 ## -----------------------------------------------
@@ -259,12 +250,6 @@ sapply(seq(1, unique(res.alleles$ID) %>% length, by=2), function(i) {
     annotate(geom='rect', ymin=i-0.5, ymax=i+0.5, xmin= 0, xmax=Inf, 
              fill='grey25', alpha=0.05, color=NA) 
 }) 
-x11(); p.res.alleles.DQhom
-
-jpeg('results/LP_DQ/Alleles_DQhom.jpg', width=11, height=5.5, units='in', res=1000)
-p.res.alleles.DQhom
-dev.off()
-
 
 ## number of cases in hom haplotypes
 dqa1.dqb1.pairs.samples.phenos <- fread('data/phenotypes/dqa1.dqb1.pairs.samples.phenos') %>% 
@@ -300,17 +285,8 @@ sapply(seq(1, unique(dqa1.dqb1.pairs.samples.phenos$Haplo) %>% length, by=2), fu
              fill='grey25', alpha=0.05, color=NA) 
 }) 
 
-# x11()
-p.dqa1.dqb1.pairs.samples.phenos
 
-# jpeg('results/LP_DQ/Cases_DQhom.jpg', width=6.5, height=3.5, units='in', res=600)
-# p.dqa1.dqb1.pairs.samples.phenos
-# dev.off()
-
-# jpeg('results/LP_DQ/Fig1_Alleles_DQhom.jpg', width=12, height=8.5, units='in', res=1000)
-# ggarrange(p.res.alleles.DQhom, p.dqa1.dqb1.pairs.samples.phenos, nrow = 2, heights = c(1, 0.6))
-# dev.off()
-
+## Figure 1
 jpeg('results/LP_DQ/Fig1_Alleles_DQhom.jpg', width=11, height=8.6, units='in', res=1000)
 p.res.alleles.DQhom / (p.dqa1.dqb1.pairs.samples.phenos + plot_spacer() + plot_layout(widths = c(1, 0.36))) + 
   plot_layout(heights = c(1, 0.65))
