@@ -5,6 +5,8 @@
 
 J Ritari, MP Reeve, FinnGen, M Siponen, M Vehviläinen, T Salo, K Osoegawa, M Fernandez Viña, B Goudey, J Partanen, E Mignot. **Fine mapping of HLA effects in Oral and non-Oral lichen planus.** _Submitted manuscript._
 
+#### HLA association summary stats in `supplementary_data/`:
+Excel tables of all conditional association analysis results.
 
 #### Scripts in `src/`:
 
