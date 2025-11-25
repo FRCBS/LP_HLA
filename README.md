@@ -3,7 +3,7 @@
 ### Analysis scripts and summary statistics data for HLA fine-mapping for oral and non-oral lichen planus (LP) in FinnGen. 
 
 
-J Ritari, MP Reeve, FinnGen, M Siponen, M Vehviläinen, T Salo, K Osoegawa, M Fernandez Viña, B Goudey, J Partanen, E Mignot. **Fine mapping of HLA effects in Oral and non-Oral lichen planus.** _: https://www.medrxiv.org/content/10.1101/2025.11.17.25340396v1_
+J Ritari, MP Reeve, FinnGen, M Siponen, M Vehviläinen, T Salo, K Osoegawa, M Fernandez Viña, B Goudey, J Partanen, E Mignot. **Fine mapping of HLA effects in Oral and non-Oral lichen planus.** _https://www.medrxiv.org/content/10.1101/2025.11.17.25340396v1_
 
 
 #### Scripts in `src/`:
