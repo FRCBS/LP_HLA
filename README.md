@@ -1,12 +1,10 @@
 # LP_HLA
 
-### Analysis scripts for HLA fine-mapping for oral and non-oral lichen planus in FinnGen. 
+### Analysis scripts for HLA fine-mapping for oral and non-oral lichen planus (LP) in FinnGen. 
 
 
-J Ritari, MP Reeve, FinnGen, M Siponen, M Vehviläinen, T Salo, K Osoegawa, M Fernandez Viña, B Goudey, J Partanen, E Mignot. **Fine mapping of HLA effects in Oral and non-Oral lichen planus.** _Submitted manuscript._
+J Ritari, MP Reeve, FinnGen, M Siponen, M Vehviläinen, T Salo, K Osoegawa, M Fernandez Viña, B Goudey, J Partanen, E Mignot. **Fine mapping of HLA effects in Oral and non-Oral lichen planus.** _: https://www.medrxiv.org/content/10.1101/2025.11.17.25340396v1_
 
-#### HLA association summary stats in `supplementary_data/`:
-Excel tables of all conditional association analysis results.
 
 #### Scripts in `src/`:
 
@@ -27,3 +25,21 @@ Conditional association analysis of HLA alleles using Regenie. Specific HLA alle
 
 + `LP_HLA_SNPs.R`
 Association analyses on MHC region SNP genotypes conditioned on specific HLA allele dosages using Regenie. Plotting the results.
+
+#### Association summary statistics data in `supplementary_data/`:
+Excel tables of all conditional association analysis results.
+
++ `LP_HLA_alleles_conditional`
+Conditional association analysis of HLA alleles. Each conditioning step is in its own sheet, with the additional HLA allele covariates given in the last column.
+
++ `LP_HLA_DQ_homozygotes_conditional`
+Conditional association analysis of HLA alleles limited to HLA DQA1-DQB1 homozygous samples. Each conditioning step is in its own sheet, with the additional HLA allele covariates given in the last column.
+
++ `LP_HLA_DQA1-DQB1_diploid_haplo_conditional`
+Conditional association analysis of diploid DQA1-DQB1 haplotypes. The first column gives the analysed genotype defining the haplotypes. Each conditioning step is in its own sheet, with the additional HLA allele covariates given in the last column.
+
++ `LP_HLA_DQA1-DQB1_haplo`
+Conditional association analysis of DQA1-DQB1 haplotypes. The first column gives the analysed genotype defining the haplotypes. Each conditioning step is in its own sheet, with the additional HLA allele covariates given in the last column.
+
++ `LP_HLA_DQB1_heterozygotes`
+Association analysis of heterozygous combinations of HLA-DQB1 alleles. The first column gives the analysed genotype defining the DQB1 allele combinations.
